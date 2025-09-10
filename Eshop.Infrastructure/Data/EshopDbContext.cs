@@ -15,6 +15,7 @@ namespace Eshop.Infrastructure.Data
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
+        public DbSet<ProductMedia> ProductMedia => Set<ProductMedia>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
